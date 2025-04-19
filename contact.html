@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>CONTACT US</h1>
+    <p class="contacttext">Please fill in the form below</p>
+    <div class="regcontainer">
+     <form id="reg-form">
+          <label for="name" class="name1"><b>First Name:</b</label>
+          <input type="text" id="entry1" placeholder="Your First name"><br>
+          <br>
+          <label for="name" class="name2">Middle Name: </label>
+          <input type="text" id="entry2" placeholder="Your Middle name"><br>
+          <br>
+          <label for="name" class="name3">Last Name: </label>
+          <input type="text" id="entry3" placeholder="Your Last name"><br>
+          <br>
+          <label for="email1" class="emailentry">Email: </label>
+          <input type="email" id="email2" placeholder="Your Email address"><br>
+          <br>
+          <textarea name="message" id="messagebox" placeholder="Please leave a message for us..."></textarea>
+          <button type="submit">Send</button>
+         </form>
+    </div>
+    {% endblock %}

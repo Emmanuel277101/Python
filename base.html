@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>www.starzallign.com</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="{{url_for('static',filename='style.css')}}">
+    <script src="{{url_for('static',filename='script.js')}}"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navitems">
+            <li><a href="{{url_for('index')}}">HOME</a></li>
+            <li><a href="{{url_for('about')}}">ABOUT</a></li>
+            <li><a href="{{url_for('contact')}}">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        {% block content %} {% endblock content %}
+    </div>
+    <img src="CALCULATOR PREVIEW GRP161.png" alt="my project"><br>
+    <p>project 1</p>
+</body>
+</html>
