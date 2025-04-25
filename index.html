@@ -1,7 +1,29 @@
-{% extends "base.html" %}
-
-{% block content %}
-    <h1><b>WELCOME TO MY PORTFOLIO WEBSITE</b></h1>
-    <img src="{{url_for('static',filename='images/profilepic.jpg')}}" alt="Profile photo">
-    <p class="description"><b>Hey there,<br> I am Njoku Emmanuel.<br>A Graphic Designer and Web Developer.</b></p>
-    {% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+    <title>portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <img src="{{url_for('static',filename='images/IMG-20240728-WA0054.jpg')}}" alt="profilepic">
+        <h2>Njoku Emmanuel</h2>
+        <h2><b>SKILLS</b></h2>
+        <ul>
+            <li>Front end web design</li>
+            <li>UI/UX design</li>
+            <li>Graphics design</li>
+        </ul>
+        <h2><b>ABOUT ME</b></h2>
+        <p>I am a software engineering student of Veritas University</p>
+        <h2><b>PROJECTS</b></h2>
+        <ul>
+            <li>A chatapp</li>
+            <li>A quiz application</li>
+            <li>The UI of an E-commerce website</li>
+        </ul>
+    </div>
+</body>
+</html>
